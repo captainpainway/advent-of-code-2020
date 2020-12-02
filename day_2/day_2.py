@@ -3,6 +3,11 @@ lines = puzzle_input.readlines()
 lines = [line.strip() for line in lines]
 
 
+# Splits each line into component parts:
+# min/max bounds, target letter, and password.
+# Counts the number of instances of the letter in the password.
+# Increments the # of valid passwords if instances
+# is between max and min.
 def part_1(passwords):
     valid_passwords = 0
     for p in passwords:
@@ -21,6 +26,11 @@ def part_1(passwords):
 print(part_1(lines))
 
 
+# Splits each line into component parts:
+# indices, target letter, and password.
+# Checks to see if the target letter is at idx1 XOR idx2.
+# Using XOR here because we only want to count if it
+# occurs once.
 def part_2(passwords):
     valid_passwords = 0
     for p in passwords:
