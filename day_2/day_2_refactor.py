@@ -4,6 +4,11 @@ lines = puzzle_input.readlines()
 lines = [line.strip() for line in lines]
 
 
+# Attempt with regex.
+# It's actually messier than the original.
+# But I've never used named groups before.
+# Also attempted to use one function for both methods,
+# which makes things messier as well.
 def password_checker(passwords, method):
     reg = re.compile('(?P<num1>\d+)-(?P<num2>\d+)(\s)(?P<letter>\w)(:\s)(?P<password>\w+)')
     valid_passwords = 0
