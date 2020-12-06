@@ -1,3 +1,5 @@
+# https://adventofcode.com/2020/day/3
+
 from functools import reduce
 
 puzzle_input = open("input.txt", "r")

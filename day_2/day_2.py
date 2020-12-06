@@ -1,3 +1,5 @@
+# https://adventofcode.com/2020/day/2
+
 puzzle_input = open("input.txt", "r")
 lines = puzzle_input.readlines()
 lines = [line.strip() for line in lines]

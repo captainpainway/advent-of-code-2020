@@ -1,3 +1,5 @@
+# https://adventofcode.com/2020/day/1
+
 input = open("input.txt", 'r')
 lines = input.readlines()
 
