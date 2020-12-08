@@ -61,11 +61,11 @@ def shiny_golds_contain(rules):
     # I felt like printing out the entire data tree with indents,
     # just so I could see what it looks like.
     def print_data_tree(node, indent):
-        print(indent + node.data)
+        print(indent + node.data.replace(".", ""))
         indent += "    "
         for c in node.children:
             print_data_tree(c, indent)
-    print_data_tree(bag_tree, '')
+    print_data_tree(bag_tree, '    ')
 
     # Multiply the number of bags with the number of parent bags
     # to get the total number of a bag within the gold bag.
@@ -86,6 +86,7 @@ def shiny_golds_contain(rules):
 # print(shiny_golds_contain(example_test))
 
 print(shiny_golds_contain(test))
+
 
 # Super fail!
 # I thought I could just find bags that contain shiny gold bags,
