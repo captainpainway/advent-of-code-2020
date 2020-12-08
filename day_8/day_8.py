@@ -3,6 +3,8 @@ import copy
 puzzle_input = open("input.txt", "r")
 lines = puzzle_input.read().strip().split("\n")
 
+# ***Part 1***
+
 
 def find_loop_value(lines):
     instructions = [tuple(x.split(" ")) for x in lines]
@@ -31,6 +33,8 @@ def find_loop_value(lines):
 
 
 print(find_loop_value(lines))
+
+# ***Part 2***
 
 
 # Brute force solution.
