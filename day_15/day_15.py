@@ -22,8 +22,8 @@ def number_game(nums, turn):
     return nums[-1]
 
 
-print(number_game(example_numbers, 2020))
-print(number_game(numbers, 2020))
+# print(number_game(example_numbers, 2020))
+# print(number_game(numbers, 2020))
 
 # *** Part 2 ***
 
@@ -31,6 +31,9 @@ print(number_game(numbers, 2020))
 # Using a dictionary to keep the last index of a number
 # makes lookups much faster. Still takes a few seconds
 # to run, though.
+# Note that the above calls to number_game have to be
+# commented out, since we're updating the global lists
+# example_numbers and numbers.
 def number_game_2(nums, turn):
     i = len(nums)
     num_dict = {x: nums.index(x) + 1 for x in nums}
